@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+	margin: auto;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;	
+}
+
+nav {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 8rem;
+    z-index: 1000;
+    background-color: #1D2020;
+    text-align: right;
+    align-items: center;
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+main {
+    display: block;
+    background-color: black;
+    color: #d5d7d8;
+    padding-top: 6em;
+}
+
+main .logo {
+    margin-left: 4.5em;
+}
+
+
+body {
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    width: 100vw;
+    height: 3em;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #1D2020;
+    color: #faae40;
+    text-align: right;
+    font-size: 10px;
+    padding-right: 30px;
+}
+
+.fa-home {
+    position: fixed;
+    left: 0;
+}
+
+.fas {
+    padding: 6px 30px;
+    font-size: 30px;
+}
+
+/* unvisited link */
+a:link {
+    color: #f38020;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #f38020;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #faae40;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  .logo {
+      display: block;
+      position: fixed;
+      top: 0;
+      z-index: 9999;
+      margin: 0 auto;
+      padding: 1.3em 0 0 6em;
+  }

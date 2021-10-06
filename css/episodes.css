@@ -1,0 +1,41 @@
+aside {
+    float: left;
+    padding-top: 3em;
+    width: 25vw;
+}
+
+section {
+    float: right;
+    width: 75vw;
+    padding: 1em 2em 1em 1em;
+}
+
+#current-ep {
+    background-color: #f38020;
+}
+
+/* Height value literally just to make it a different color. Necessary? */
+#previous-eps {
+    background-color: #1D2020;
+    height: 71vh; 
+}
+
+#current-ep h1, #previous-eps h1 {
+    padding: 1em;
+}
+
+h2{
+    padding: 1em;
+}
+
+.ep-box {
+    margin: 20px;
+    padding: 20px;
+    border-style: double;
+    border-color: #faae40;
+    font-size: 16px;
+}
+
+.current {
+    border-color: #1D2020;
+}
