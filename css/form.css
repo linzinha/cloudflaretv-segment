@@ -1,3 +1,8 @@
+main h1 {
+    padding-top: 1.2em;
+}
+
+
 html, body {
 min-height: 100%;
 }
@@ -10,6 +15,11 @@ font-size: 14px;
 color: #666;
 line-height: 22px;
 }
+
+main .logo {
+    font-size: 16px;
+}
+
 h1, h4 {
 font-weight: 400;
 }
@@ -30,7 +40,7 @@ form {
 width: 100%;
 padding: 20px;
 box-shadow: 0 2px 5px #ccc; 
-background: #fff;
+background: black;
 }
 input {
 width: calc(100% - 10px);
