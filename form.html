@@ -1,165 +1,164 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Survey</title>
+    <title>Getting Started in Tech - Survey Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+    <link href="fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
   </head>
   <body>
     <!-- Navigation Bar, top of each page-->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="episodes.html">Episodes</a>
-        <a href="form.html">Form</a>
-    </nav>
-    <div class="main-block">
-      <form action="https://sendform.sem-gnome.workers.dev" method="POST">
-        <h1>Technical Growth Survey</h1>
-        <h4>Name</h4>
-        <input type="text" name="name"/>
-        <h4>Email</h4>
-        <input type="text" name="email_address"/>
-        <h5>Personal Background</h5>
-        <div>
-          <h4>Are any of the following statements true for you?</h4>  
-          <table>
-            <tr>
-              <td class="first-col">I'm looking for my first job in tech</td>
-              <td><input type="checkbox" value="checked" name="first_job"></td>
-            </tr>
-            <tr>
-              <td class="first-col">I want to transition to a different or more technical role</td>
-              <td><input type="checkbox" value="checked" name="new_job"></td>
-            </tr>
-            <tr>
-              <td class="first-col">I'm hoping to work in tech one day but don't feel ready yet</td>
-              <td><input type="checkbox" value="checked" name="one_day"></td>
-            </tr>
+      <a href="index.html" class="fas fa-home" title="Home"></a>
+      <a href="episodes.html" class="fas fa-tv" title="Episodes"></a>
+      <a href="form.html" class="fas fa-poll-h" title="Survey"></a>
+  </nav>
+    <main>
+      <img src="https://imagedelivery.net/u55K1XUN6QvghyTcOKMazA/0274337e-c902-4d6f-a808-36dff0288c00/public" class="logo" alt="">
+      <div class="main-block">
+        <form action="https://sendform.sem-gnome.workers.dev" method="POST">
+          <h1>Technical Growth Survey</h1>
+          <h4>Name</h4>
+          <input type="text" name="name"/>
+          <h4>Email</h4>
+          <input type="text" name="email_address"/>
+          <h5>Personal Background</h5>
+          <div>
+            <h4>Are any of the following statements true for you?</h4>  
+            <table>
+              <tr>
+                <td class="first-col">I'm looking for my first job in tech</td>
+                <td><input type="checkbox" value="checked" name="first_job"></td>
+              </tr>
+              <tr>
+                <td class="first-col">I want to transition to a different or more technical role</td>
+                <td><input type="checkbox" value="checked" name="new_job"></td>
+              </tr>
+              <tr>
+                <td class="first-col">I'm hoping to work in tech one day but don't feel ready yet</td>
+                <td><input type="checkbox" value="checked" name="one_day"></td>
+              </tr>
 
-          </table>
-        </div>
-        
-        <h5>Areas of Interest</h5>
-        <div>
-          <h4>What is your interest in the following:</h4>
-          <table>
-            <tr>
-              <th class="first-col"></th>
-              <th>Little to no interest</th>
-              <th>Some interest</th>
-              <th>Medium interest</th>
-              <th>Very interested</th>
-              <th>Highly interested</th>
-            </tr>
-            <tr>
-              <td class="first-col">Web and Application Development</td>
-              <td><input type="radio" value="1" name="web_app_dev" /></td>
-              <td><input type="radio" value="2" name="web_app_dev" /></td>
-              <td><input type="radio" value="3" name="web_app_dev" /></td>
-              <td><input type="radio" value="4" name="web_app_dev" /></td>
-              <td><input type="radio" value="5" name="web_app_dev" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Network Engineering</td>
-              <td><input type="radio" value="1" name="net_eng" /></td>
-              <td><input type="radio" value="2" name="net_eng" /></td>
-              <td><input type="radio" value="3" name="net_eng" /></td>
-              <td><input type="radio" value="4" name="net_eng" /></td>
-              <td><input type="radio" value="5" name="net_eng" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Data Science</td>
-              <td><input type="radio" value="1" name="d_sci" /></td>
-              <td><input type="radio" value="2" name="d_sci" /></td>
-              <td><input type="radio" value="3" name="d_sci" /></td>
-              <td><input type="radio" value="4" name="d_sci" /></td>
-              <td><input type="radio" value="5" name="d_sci" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Network and/or Cloud Architecture</td>
-              <td><input type="radio" value="1" name="net_clo_arc" /></td>
-              <td><input type="radio" value="2" name="net_clo_arc" /></td>
-              <td><input type="radio" value="3" name="net_clo_arc" /></td>
-              <td><input type="radio" value="4" name="net_clo_arc" /></td>
-              <td><input type="radio" value="5" name="net_clo_arc" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Cybersecurity</td>
-              <td><input type="radio" value="1" name="cybersec" /></td>
-              <td><input type="radio" value="2" name="cybersec" /></td>
-              <td><input type="radio" value="3" name="cybersec" /></td>
-              <td><input type="radio" value="4" name="cybersec" /></td>
-              <td><input type="radio" value="5" name="cybersec" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">DevOps</td>
-              <td><input type="radio" value="1" name="dev_ops" /></td>
-              <td><input type="radio" value="2" name="dev_ops" /></td>
-              <td><input type="radio" value="3" name="dev_ops" /></td>
-              <td><input type="radio" value="4" name="dev_ops" /></td>
-              <td><input type="radio" value="5" name="dev_ops" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Cryptography</td>
-              <td><input type="radio" value="1" name="crypto" /></td>
-              <td><input type="radio" value="2" name="crypto" /></td>
-              <td><input type="radio" value="3" name="crypto" /></td>
-              <td><input type="radio" value="4" name="crypto" /></td>
-              <td><input type="radio" value="5" name="crypto" /></td>
-            </tr>
-            <tr>
-              <td class="first-col">Machine Learning and AI</td>
-              <td><input type="radio" value="1" name="ml_ai" /></td>
-              <td><input type="radio" value="2" name="ml_ai" /></td>
-              <td><input type="radio" value="3" name="ml_ai" /></td>
-              <td><input type="radio" value="4" name="ml_ai" /></td>
-              <td><input type="radio" value="5" name="ml_ai" /></td>
-            </tr>
-          </table>
-        </div>
-        <h4>Anything not listed above:</h4>
-        <textarea rows="5" name="other_areas"></textarea>
-        <h5>Learning Experiences</h5>
-        <h4>Have you participated in any of the following?</h4>
-        <p class="question">Bootcamps</p>
-        <div class="question-answer">
-          <label><input type="radio" value="yes" name="bootcamp" /> yes</label>
-          <label><input type="radio" value="no" name="bootcamp" /> no</label>
-        </div>
-        <p class="question">Online courses, self-paced or with deadlines (Udemy, Coursera, etc)</p>
-        <div class="question-answer">
-          <label><input type="radio" value="yes" name="online_course" /> yes</label>
-          <label><input type="radio" value="no" name="online_course" /> no</label>
-        </div>
-        <p class="question">In-person Programs</p>
-        <div class="question-answer">
-          <label><input type="radio" value="yes" name="irl_course" /> yes</label>
-          <label><input type="radio" value="no" name="irl_course" /> no</label>
-        </div>
-        <p class="question">Universisity Cousework toward a certificate or degree</p>
-        <div class="question-answer">
-          <label><input type="radio" value="yes" name="uni_course" /> yes</label>
-          <label><input type="radio" value="no" name="uni_course" /> no</label>
-        </div>
-        <h5>Open Questions</h5>
-        <h4>What have you enjoyed the most about your learning experience so far?</h4>
-        <textarea rows="5" name="enjoyed_most"></textarea>
-        <h4>What have been some of the greatest challenges?</h4>
-        <textarea rows="5" name="greatest_challenge"></textarea>
-        <h4>What do you feel would be the most helpful thing in getting your first or next job in tech?</h4>
-        <textarea rows="5" name="most_helpful"></textarea>
-        <h5>Additional Information</h5>
-        <h4>Is there any additional background or other information related to your journey that you'd like to share with this project?</h4>
-        <textarea rows="5" name="more_info"></textarea>
-        <p class="question">Would you be open to receiving follow up communication from this survey?</p>
-        <div class="question-answer">
-          <label><input type="radio" value="yes" name="follow_up" /> yes</label>
-          <label><input type="radio" value="no" name="follow_up" /> no</label>
-        </div>
-        <div class="btn-block">
-          <button type="submit" href="/">Send</button>
-        </div>
-      </form>
-    </div>
+            </table>
+          </div>
+          
+          <h5>Areas of Interest</h5>
+          <div>
+            <h4>What is your interest in the following:</h4>
+            <table>
+              <tr>
+                <th class="first-col"></th>
+                <th>Not Interested</th>
+                <th>Somewhat Interested</th>
+                <th>Moderately Interested</th>
+                <th>Highly Interested</th>
+              </tr>
+              <tr>
+                <td class="first-col">Web and Application Development</td>
+                <td><input type="radio" value="1" name="web_app_dev" /></td>
+                <td><input type="radio" value="2" name="web_app_dev" /></td>
+                <td><input type="radio" value="3" name="web_app_dev" /></td>
+                <td><input type="radio" value="4" name="web_app_dev" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Network Engineering</td>
+                <td><input type="radio" value="1" name="net_eng" /></td>
+                <td><input type="radio" value="2" name="net_eng" /></td>
+                <td><input type="radio" value="3" name="net_eng" /></td>
+                <td><input type="radio" value="4" name="net_eng" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Data Science</td>
+                <td><input type="radio" value="1" name="d_sci" /></td>
+                <td><input type="radio" value="2" name="d_sci" /></td>
+                <td><input type="radio" value="3" name="d_sci" /></td>
+                <td><input type="radio" value="4" name="d_sci" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Network and/or Cloud Architecture</td>
+                <td><input type="radio" value="1" name="net_clo_arc" /></td>
+                <td><input type="radio" value="2" name="net_clo_arc" /></td>
+                <td><input type="radio" value="3" name="net_clo_arc" /></td>
+                <td><input type="radio" value="4" name="net_clo_arc" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Cybersecurity</td>
+                <td><input type="radio" value="1" name="cybersec" /></td>
+                <td><input type="radio" value="2" name="cybersec" /></td>
+                <td><input type="radio" value="3" name="cybersec" /></td>
+                <td><input type="radio" value="4" name="cybersec" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">DevOps</td>
+                <td><input type="radio" value="1" name="dev_ops" /></td>
+                <td><input type="radio" value="2" name="dev_ops" /></td>
+                <td><input type="radio" value="3" name="dev_ops" /></td>
+                <td><input type="radio" value="4" name="dev_ops" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Cryptography</td>
+                <td><input type="radio" value="1" name="crypto" /></td>
+                <td><input type="radio" value="2" name="crypto" /></td>
+                <td><input type="radio" value="3" name="crypto" /></td>
+                <td><input type="radio" value="4" name="crypto" /></td>
+              </tr>
+              <tr>
+                <td class="first-col">Machine Learning and AI</td>
+                <td><input type="radio" value="1" name="ml_ai" /></td>
+                <td><input type="radio" value="2" name="ml_ai" /></td>
+                <td><input type="radio" value="3" name="ml_ai" /></td>
+                <td><input type="radio" value="4" name="ml_ai" /></td>
+              </tr>
+            </table>
+          </div>
+          <h4>Anything not listed above:</h4>
+          <textarea rows="5" name="other_areas"></textarea>
+          <h5>Learning Experiences</h5>
+          <h4>Have you participated in any of the following?</h4>
+          <p class="question">Bootcamps</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="bootcamp" /> yes</label>
+            <label><input type="radio" value="no" name="bootcamp" /> no</label>
+          </div>
+          <p class="question">Online courses, self-paced or with deadlines (Udemy, Coursera, etc)</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="online_course" /> yes</label>
+            <label><input type="radio" value="no" name="online_course" /> no</label>
+          </div>
+          <p class="question">In-person Programs</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="irl_course" /> yes</label>
+            <label><input type="radio" value="no" name="irl_course" /> no</label>
+          </div>
+          <p class="question">Universisity Cousework toward a certificate or degree</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="uni_course" /> yes</label>
+            <label><input type="radio" value="no" name="uni_course" /> no</label>
+          </div>
+          <h5>Open Questions</h5>
+          <h4>What have you enjoyed the most about your learning experience so far?</h4>
+          <textarea rows="5" name="enjoyed_most"></textarea>
+          <h4>What have been some of the greatest challenges?</h4>
+          <textarea rows="5" name="greatest_challenge"></textarea>
+          <h4>What do you feel would be the most helpful thing in getting your first or next job in tech?</h4>
+          <textarea rows="5" name="most_helpful"></textarea>
+          <h5>Additional Information</h5>
+          <h4>Is there any additional background or other information related to your journey that you'd like to share with this project?</h4>
+          <textarea rows="5" name="more_info"></textarea>
+          <p class="question">Would you be open to receiving follow up communication from this survey?</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="follow_up" /> yes</label>
+            <label><input type="radio" value="no" name="follow_up" /> no</label>
+          </div>
+          <div class="btn-block">
+            <button type="submit" href="/">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      2021 Made by Lindsey for CloudflareTV
+    </footer>
   </body>
 </html>
