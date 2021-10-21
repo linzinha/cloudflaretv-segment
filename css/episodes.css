@@ -1,29 +1,45 @@
-aside {
+.empty-corner {
     float: left;
-    padding-top: 3em;
+    height: 128px;
+    width: 25vw;
+}
+
+aside {
+    position: fixed;
+    top: 128px;
+    left: 0;
+    padding: 1em 1em 0em 1em;
     width: 25vw;
     height: 100vw;
-    color: palevioletred;
+    color: #f38020;
+    z-index: 500;
 }
 
 section {
     float: right;
     width: 75vw;
-    padding: 1em 2em 1em 1em;
+    padding: 0em 2em 1em 1em;
+}
+
+li {
+    padding-bottom: 1em;
 }
 
 #current-ep {
     background-color: #f38020;
+    scroll-margin-top: 128px;
 }
 
 /* Height value literally just to make it a different color. Necessary? */
 #previous-eps {
     background-color: #f38020;
+    scroll-margin-top: 128px;
 }
 
 #future-eps {
-    background-color: #1D2020;
-    height: 50vh; 
+    background-color: #505555;
+    height: 60vh; 
+    scroll-margin-top: 128px;
 }
 
 #current-ep h1, #previous-eps h1, #future-eps h1 {

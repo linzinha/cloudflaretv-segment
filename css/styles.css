@@ -21,7 +21,8 @@ main {
     display: block;
     background-color: black;
     color: #d5d7d8;
-    padding-top: 6em;
+    position: absolute;
+    top: 128px;
 }
 
 main .logo {
@@ -83,4 +84,10 @@ color: blue;
     z-index: 9999;
     margin: 0 auto;
     padding: 1.3em 0 0 6em;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    color: #f38020;
 }
