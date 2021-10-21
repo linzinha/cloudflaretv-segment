@@ -59,28 +59,28 @@ footer {
 /* unvisited link */
 a:link {
     color: #f38020;
-  }
+}
   
-  /* visited link */
-  a:visited {
-    color: #f38020;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #faae40;
-  }
-  
-  /* selected link */
-  a:active {
-    color: blue;
-  }
+/* visited link */
+a:visited {
+color: #f38020;
+}
 
-  .logo {
-      display: block;
-      position: fixed;
-      top: 0;
-      z-index: 9999;
-      margin: 0 auto;
-      padding: 1.3em 0 0 6em;
-  }
+/* mouse over link */
+a:hover {
+color: #faae40;
+}
+
+/* selected link */
+a:active {
+color: blue;
+}
+
+.logo {
+    display: block;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    margin: 0 auto;
+    padding: 1.3em 0 0 6em;
+}

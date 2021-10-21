@@ -2,6 +2,8 @@ aside {
     float: left;
     padding-top: 3em;
     width: 25vw;
+    height: 100vw;
+    color: palevioletred;
 }
 
 section {
@@ -16,11 +18,15 @@ section {
 
 /* Height value literally just to make it a different color. Necessary? */
 #previous-eps {
-    background-color: #1D2020;
-    height: 71vh; 
+    background-color: #f38020;
 }
 
-#current-ep h1, #previous-eps h1 {
+#future-eps {
+    background-color: #1D2020;
+    height: 50vh; 
+}
+
+#current-ep h1, #previous-eps h1, #future-eps h1 {
     padding: 1em;
 }
 
@@ -38,4 +44,24 @@ h2{
 
 .current {
     border-color: #1D2020;
+}
+
+/* unvisited link */
+main a:link {
+    color: #1D2020;
+}
+
+/* visited link */
+main a:visited {
+color: #1D2020;
+}
+
+/* mouse over link */
+main a:hover {
+color: #252929;
+}
+
+/* selected link */
+main a:active {
+color: #d5d7d8;
 }
