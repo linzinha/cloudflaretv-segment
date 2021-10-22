@@ -91,3 +91,32 @@ ul {
     list-style-type: circle;
     color: #f38020;
 }
+
+@media (max-width: 500px) {
+    nav {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 8rem;
+        z-index: 1000;
+        background-color: #1D2020;
+        text-align: right;
+        align-items: center;
+        padding: 3rem 0rem 0rem 0rem;
+    }
+    main .logo {
+        margin-left: 1.3em;
+    }
+    .fas {
+        padding: 0px;
+    }
+    .fa-home {
+        padding: 10px 45px;
+    }
+    .fa-tv {
+        padding: 10px 15px;
+    }
+    .fa-poll-h {
+        padding: 10px 20px 10px 0px;
+    }
+}

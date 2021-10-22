@@ -27,3 +27,30 @@ section {
 .text-content {
     padding: 0em 9em;
 }
+
+@media (max-width: 1170px) {
+    .text-content {
+        padding: 0em 5em;
+    }
+}
+
+@media (max-width: 949px) {
+    .text-content {
+        padding: 0em 3em;
+    }
+}
+
+@media (max-width: 700px) {
+    .text-content {
+        padding: 0em 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    section{
+        padding: 2em 1.5em;
+    }
+    .text-content {
+        padding: 0em;
+    }
+}
