@@ -26,17 +26,21 @@
     </div>
 
     <aside>
-        <ul>
-            <li>
-                <a href="#current-ep">Current Episode</a>
-            </li>
-            <li>
-                <a class="anchor" href="#future-eps">Next Episode</a>
-            </li>
-            <li>
-                <a class="anchor" href="#previous-eps">Past Episodes</a>
-            </li>
-        </ul>
+        <div id="link-box">
+            <ul>
+                <li>
+                    <a href="#current-ep">Current Episode</a>
+                </li>
+                <hr>
+                <li>
+                    <a class="anchor" href="#future-eps">Next Episode</a>
+                </li>
+                <hr>
+                <li>
+                    <a class="anchor" href="#previous-eps">Past Episodes</a>
+                </li>
+            </ul>
+        </div>
     </aside>
 
     <main>
@@ -45,7 +49,7 @@
             <h1 class="anchor">Current Episode</h1>
             <hr>
             <h2>Getting Into Tech: A Day in the Life</h2>
-            <div class="ep-box current">
+            <div class="ep-box orange">
                 <h3>
                     In this episode, we will have a conversation with one of our Support Engineers. In this discussion we will learn about their background, their current role, and their experiences applying for tech jobs.
                     <br>
@@ -70,20 +74,20 @@
             <h1>Past Episodes</h1>
             <hr>
             <h2>Getting Into Tech: Interviewing the Interviewer</h2>
-            <div class="ep-box">
+            <div class="ep-box orange">
                 <h3>
                     In our first segment, we speak with Daniela Rodrigues, a Recruiting Coordinator in our Lisbon office. We will get to hear what her day is like, what role the recruiting coordinator plays within the Cloudflare hiring process, and gain valuable perspective for prospective candidates.
                 </h3>
                 <br>
                 <h2>
-                    <iframe src="https://iframe.videodelivery.net/2dc8bab6da4615b601794fddd02dfb01"
-                        style="border: none;"
-                        height="480"
-                        width="720"
-                        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                        allowfullscreen="true"
-                        >
-                    </iframe>
+                    <div class="player">
+                        <iframe
+                          src="https://iframe.videodelivery.net/2dc8bab6da4615b601794fddd02dfb01"
+                          style="border: none; position: absolute; top: 0; height: 100%; width: 100%;"
+                          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                          allowfullscreen="true"
+                        ></iframe>
+                      </div>
                     <br>
                     <a href="https://cloudflare.tv/event/2HLLYuoMVW8bXpGVDUEFPu" target="_blank">View Episode on Cloudflare TV</a>
                 </h2>

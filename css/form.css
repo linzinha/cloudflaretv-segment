@@ -32,7 +32,7 @@ h4 {
 
 h5 {
     text-transform: uppercase;
-    color: #095484;
+    color: #f38020;
 }
 
 main {
@@ -60,6 +60,10 @@ input {
     border-radius: 3px;
     border: 1px solid #ccc;
     vertical-align: middle;
+}
+
+.radio input{
+    margin-left: calc(50% - 10px);
 }
 
 textarea {
@@ -133,8 +137,20 @@ button:hover {
     background: #0666a3;
 }
 
+ol {
+    list-style-position: inside;
+    color: #f38020;
+}
+
 @media (min-width: 568px) {
     th, td {
         word-break: keep-all;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-block {
+        padding: 3px;
+        width: 100vw;
     }
 }

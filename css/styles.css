@@ -25,11 +25,6 @@ main {
     top: 128px;
 }
 
-main .logo {
-    margin-left: 4.5em;
-}
-
-
 body {
     background-color: black;
 }
@@ -60,6 +55,7 @@ footer {
 /* unvisited link */
 a:link {
     color: #f38020;
+    text-decoration: none;
 }
   
 /* visited link */
@@ -80,10 +76,11 @@ color: blue;
 .logo {
     display: block;
     position: fixed;
-    top: 0;
+    top: 22px;
+    left: calc(50% - 110px);
     z-index: 9999;
     margin: 0 auto;
-    padding: 1.3em 0 0 6em;
+
 }
 
 ul {
@@ -94,18 +91,7 @@ ul {
 
 @media (max-width: 500px) {
     nav {
-        display: block;
-        position: fixed;
-        width: 100vw;
-        height: 8rem;
-        z-index: 1000;
-        background-color: #1D2020;
-        text-align: right;
-        align-items: center;
         padding: 3rem 0rem 0rem 0rem;
-    }
-    main .logo {
-        margin-left: 1.3em;
     }
     .fas {
         padding: 0px;
@@ -119,4 +105,21 @@ ul {
     .fa-poll-h {
         padding: 10px 20px 10px 0px;
     }
+}
+
+@media (max-width: 330px) {
+    .logo {
+        width: 40%;
+        left: 26%;
+        top: 42px;
+    }
+    /* nav {
+        padding: 3rem 0rem 0rem 0rem;
+    }
+    main .logo {
+        margin-top: 1.4em;
+        margin-left: 0.5em;
+        width: 65%;
+        padding: 1.3em 0 0 5em;
+    } */
 }
