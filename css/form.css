@@ -142,15 +142,15 @@ ol {
     color: #f38020;
 }
 
+@media (min-width: 568px) {
+    th, td {
+        word-break: keep-all;
+    }
+}
+
 @media (max-width: 900px) {
     .main-block {
         padding: 3px;
         width: 100vw;
-    }
-}
-
-@media (min-width: 568px) {
-    th, td {
-        word-break: keep-all;
     }
 }
