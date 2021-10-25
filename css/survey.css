@@ -1,0 +1,114 @@
+/* HTML */
+html, body {
+    min-height: 100%;
+}
+
+h1, h4 {
+    font-weight: 400;
+}
+    
+section, h4 {
+    margin: 22px 0 4px;
+}
+
+h5 {
+    text-transform: uppercase;
+    color: #f38020;
+}
+
+/* BODY */
+body, input { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+/* MAIN */
+main {
+    width: 100vw;
+    height: 80vh;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+main h1 {
+    padding-top: 1.2em;
+}
+
+/* MAIN-BLOCK */
+.main-block {
+    position: relative;
+    display: flex;
+    padding: 3px;
+    width: 60vw;
+    height: 80vh;
+}
+
+/* SPECIFIC FORM SECTIONS??? */
+#form-div {
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 5px #ccc; 
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+#intro {
+    display: block;
+}
+
+#survey-page1 {
+    display: none;
+}
+
+#survey-page2 {
+    display: none;
+}
+
+#survey-page3 {
+    display: none;
+}
+#survey-page4 {
+    display: none;
+}
+
+#survey-page5 {
+    display: none;
+}
+
+#next-button {
+    display: inline;
+}
+
+/* BUTTON */
+button {
+    width: 150px;
+    padding: 10px;
+    margin: 5px 20px 0px;
+    border: none;
+    border-radius: 5px; 
+    background: #f38020;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #faae40;
+}
+
+.btn-block {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#returnButtonSet {
+    display: none;
+}
+
+#initiate {
+    display: inline;
+}

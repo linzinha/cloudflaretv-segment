@@ -4,35 +4,19 @@
     width: 25vw;
 }
 
+/* -------
+NAVIGATION
+------- */
 aside {
     position: fixed;
+    z-index: 500;
     top: 128px;
     left: 0;
-    padding: 1em 1em 0em 1em;
     width: 25vw;
     height: 100vw;
+    padding: 1em 1em 0em 1em;
+    background-color: black;
     color: #f38020;
-    z-index: 500;
-}
-
-section {
-    float: right;
-    width: 75vw;
-    padding: 0em 1em 1em 1em;
-}
-
-aside hr, #future-eps hr {
-    margin-bottom: 1em;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #faae40, #faae40, rgba(0, 0, 0, 0));
-}
-
-#current-ep hr, #previous-eps hr {
-    margin-bottom: 1em;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #505555, #505555, rgba(0, 0, 0, 0));
 }
 
 li {
@@ -45,29 +29,33 @@ li {
     text-align: center;
 }
 
-#current-ep, #previous-eps {
+/* -----
+EPISODES
+----- */
+main {
     background-color: #f38020;
-    scroll-margin-top: 128px;
 }
 
-#future-eps {
-    background-color: #505555;
-    scroll-margin-top: 128px;
+section {
+    float: right;
+    width: 75vw;
+    padding: 0em 1em 1em 1em;
 }
 
-#current-ep h1, #previous-eps h1, #future-eps h1 {
+h1, h2 {
     padding: 1em;
 }
 
-h2{
-    padding: 1em;
+
+.ep {
+    scroll-margin-top: 128px;
 }
 
 .ep-box {
-    margin: 20px;
-    padding: 20px;
     border-style: double;
     border-color: #faae40;
+    margin: 20px;
+    padding: 20px;
     font-size: 16px;
 }
 
@@ -80,6 +68,31 @@ h2{
     padding-top: 56.25%;
 }
 
+#future-eps {
+    background-color: #505555;
+}
+
+#current-ep hr, #previous-eps hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #505555, #505555, rgba(0, 0, 0, 0));
+}
+
+/* -
+BOTH
+- */
+
+hr {
+    margin-bottom: 1em;
+    border: 0;
+    height: 1px;
+}
+
+aside hr, #future-eps hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #faae40, #faae40, rgba(0, 0, 0, 0));
+}
+
+/* --
+LINKS
+-- */
 /* unvisited link */
 main a:link {
     color: #1D2020;
@@ -117,52 +130,49 @@ color: #d5d7d8;
     }
 }
 
+/* --
+MEDIA
+--- */
 /* @media (max-width: ) */
-
 @media (max-width: 414px) {
-    #link-box {
-        top: 0;
+    aside {
+        position: fixed;
+        z-index: 500;
+        top: 128px;
+        left: 0;
         width: 100vw;
+        height: 50px;
+        padding: 1em 1em 0em 1em;
     }
-
     aside hr {
         display: none;
     }
-
     aside li {
         display: inline;
         padding: 0px 5px;
         font-size: 14px;
     }
-
     aside ul {
         text-align: center;
-    }
-
-    aside {
-        position: fixed;
-        top: 128px;
-        left: 0;
-        height: 50px;
-        width: 100vw;
-        background-color: black;
-        z-index: 500;
-        padding: 1em 1em 0em 1em;
-    }
-    section {
-        width: 100vw;
     }
     main {
         top: 178px;
     }
-    #current-ep, #previous-eps, #future-eps {
-        scroll-margin-top: 178px;
+    section {
+        width: 100vw;
     }
     h2 {
         font-size: 16px;
     }
     h3 {
         font-size: 14px;
+    }
+    .ep {
+        scroll-margin-top: 178px;
+    }
+    #link-box {
+        top: 0;
+        width: 100vw;
     }
 }
 
