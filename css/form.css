@@ -50,6 +50,7 @@ main {
 form {
     width: 100%;
     padding: 20px;
+    margin-bottom: 6em;
     box-shadow: 0 2px 5px #ccc; 
     background: black;
 }

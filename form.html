@@ -22,6 +22,10 @@
       <div class="main-block">
         <form action="https://sendform.sem-gnome.workers.dev" method="POST">
           <h1>Technical Growth Survey</h1>
+          <h4>Name</h4>
+           <input type="text" name="name"/>
+           <h4>Email</h4>
+           <input type="text" name="email_address"/>
           <h5>Personal Background</h5>
           <div>
             <h4>Are any of the following statements true for you?</h4>  
@@ -151,6 +155,11 @@
           <h5>Additional Information</h5>
           <h4>Is there any additional background or other information related to your journey that you'd like to share with this project?</h4>
           <textarea rows="5" name="more_info"></textarea>
+          <p class="question">Would you be open to receiving follow up communication from this survey?</p>
+          <div class="question-answer">
+            <label><input type="radio" value="yes" name="follow_up" /> yes</label>
+            <label><input type="radio" value="no" name="follow_up" /> no</label>
+          </div>
           <div class="btn-block">
             <button type="submit" href="/">Send</button>
           </div>
@@ -158,6 +167,10 @@
       </div>
     </main>
     <footer>
+      <div id="privacy">
+        <h2>Cloudflare abuse policy</h1>
+        If your submission is valid, Cloudflare will act in accordance with our privacy and security policy. Cloudflare will notify the site owner and, where appropriate, the web hosting provider for the site in question.By submitting a report, you agree that data from the report may potentially be released by Cloudflare to third parties, such as the Lumen Database.
+      </div>
       2021 Made by Lindsey for CloudflareTV
     </footer>
   </body>
